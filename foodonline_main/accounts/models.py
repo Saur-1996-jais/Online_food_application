@@ -39,10 +39,10 @@ class UserManager(BaseUserManager):
 
 # by accessing this AbstractBaseUser, we are taking the full control of editing the whole custom user model, including the authentication functionality of django
 class User(AbstractBaseUser):
-    RESTAURANT = 1
+    VENDOR = 1
     CUSTOMER = 2
     ROLE_CHOICES = (
-    (RESTAURANT, 'Restaurant'),
+    (VENDOR, 'Vendor'),
     (CUSTOMER, 'Customer'),
     )
     first_name = models.CharField(max_length=50)
